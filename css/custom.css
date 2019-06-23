@@ -1,17 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow|Indie+Flower&display=swap");
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #eee;
-  color: #224; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 body {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background: #eee;
+  color: #224; }
 
-header h1 {
-  font-family: "Indie Flower", cursive; }
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: powderblue; }
+  header h1 {
+    display: flex;
+    font-family: "Indie Flower", cursive;
+    justify-content: center;
+    background: powderblue; }
 
 p {
   font-family: "Barlow", sans-serif; }
+
+footer {
+  background: powderblue; }
+  footer ul {
+    display: inline-flex;
+    list-style: none; }
+    footer ul li {
+      justify-content: space-around; }
 
 /*# sourceMappingURL=custom.css.map */

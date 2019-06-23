@@ -2,21 +2,39 @@
 
 * {
     font-family: $arial;
-    background: #eee;
-    color: #224;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    background: #eee;
+    color: #224;
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: powderblue;
     h1 {
+        display: flex;
         font-family: $flower;
+        justify-content: center;
+        background: powderblue;
     }
 }
 
 p {
     font-family: $barlow;
+}
+
+footer{
+    background: powderblue;
+    ul{
+        display:inline-flex;
+        list-style: none;
+        li{
+            justify-content: space-around;
+        }
+    }
 }
