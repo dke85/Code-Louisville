@@ -1,0 +1,22 @@
+@import 'variables';
+
+* {
+    font-family: $arial;
+    background: #eee;
+    color: #224;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    h1 {
+        font-family: $flower;
+    }
+}
+
+p {
+    font-family: $barlow;
+}

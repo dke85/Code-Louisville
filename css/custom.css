@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Indie+Flower&display=swap");
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eee;
+  color: #224; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+header h1 {
+  font-family: "Indie Flower", cursive; }
+
+p {
+  font-family: "Barlow", sans-serif; }
+
+/*# sourceMappingURL=custom.css.map */
