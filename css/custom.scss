@@ -1,5 +1,7 @@
 @import 'variables';
 
+// ----Overall Styles----- //
+
 * {
     font-family: $arial;
 }
@@ -7,34 +9,110 @@
 body{
     display: flex;
     flex-direction: column;
-    background: #eee;
-    color: #224;
-}
-
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: powderblue;
-    h1 {
-        display: flex;
-        font-family: $flower;
-        justify-content: center;
-        background: powderblue;
-    }
+    background: $lightBlue;
+    color: $fixedBlack;
+    min-height: 100vh;
 }
 
 p {
     font-family: $barlow;
 }
 
-footer{
-    background: powderblue;
+a{
+    color:$darkBlue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+// ----Section Styles----- //
+
+header{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    //justify-content: center;
+    background: $altMedBlue;
+    border-bottom: $darkBlue dashed 2px;
+
+    h1 {
+        display: flex;
+        font-family: $flower;
+        justify-content: center;
+        background: $altMedBlue;
+        font-size: 2.5em;
+        color: $darkBlue;
+        text-align: center;
+        a{
+            font-family: inherit;
+        }
+    }
+
+    h2{
+        font-size: 1.75em;
+        font-family: $barlow;
+        text-align: center;
+        margin-top: 0;
+        color: $darkBlue
+    }
+}
+
+main{
+    flex: 2;
+
+    h3{
+        padding-left:1em;
+    }
+    p{
+        padding-left:1em;
+    }
+}
+
+section{
+    flex: 4;
+
     ul{
-        display:inline-flex;
-        list-style: none;
+        list-style-type: none;
+        padding-left: 0;
+
         li{
-            justify-content: space-around;
+            background: $medRed;
+            text-align: center;
+            border: $darkBlue dashed 2px;
+            padding: 4vh 0;
+            margin-top:5px; //fix later with nth child or class
+
+            a{
+                color: $darkRed;
+                font-size: 2.5em;
+            }
         }
     }
 }
+
+footer{
+    background: $altMedBlue;
+    flex: 1;
+    border-top: $darkBlue dashed 2px;
+
+    ul{
+        display:inline-flex;
+        list-style: none;
+        flex-wrap: wrap;
+        width: $full;
+        padding-left: 0;
+        
+        li{
+            flex-basis: 50%;
+            justify-content: space-evenly;
+            text-align: center;            
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 0.75em;
+        color: $darkBlue;
+    }
+}
+
+// ----Media Queries---- //
